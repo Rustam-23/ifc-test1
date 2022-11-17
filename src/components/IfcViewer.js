@@ -47,12 +47,7 @@ const IfcViewer = () => {
       />
       <label htmlFor="file">Open file</label>
       <IfcContainer
-        style={{
-          position: "relative",
-          width: "100vw",
-          height: "100vh",
-          overflow: "hidden"
-        }}
+        
       ref={ifcContainer}
       viewer={viewer}
       />

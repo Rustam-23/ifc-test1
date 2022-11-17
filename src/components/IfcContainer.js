@@ -19,6 +19,12 @@ const IfcContainer = forwardRef((props, ref) => {
   return (
     <>
       <div
+        style={{
+          position: "relative",
+          width: "80vw",
+          height: "80vh",
+          overflow: "hidden"
+        }}
         className="ifcContainer"
         ref={ref}
         onDoubleClick={ifcOnClick}
