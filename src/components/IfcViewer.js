@@ -17,7 +17,7 @@ const IfcViewer = () => {
       const ifcViewer = new IfcViewerAPI({ container, backgroundColor: new Color(0xffffff) });
       ifcViewer.grid.setGrid(50, 20, new Color(0xcccccc), new Color(0xaaaaaa));
       ifcViewer.axes.setAxes(10);
-
+      ifcViewer.IFC.setWasmPath('../../');
       ifcViewer.IFC.loader.ifcManager.applyWebIfcConfig({
         COORDINATE_TO_ORIGIN: true,
         USE_FAST_BOOLS: true
@@ -46,6 +46,7 @@ const IfcViewer = () => {
         style={{ display: "none" }}
       />
       <label htmlFor="file">Open file</label>
+      
       <IfcContainer
         
       ref={ifcContainer}
