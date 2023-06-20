@@ -20,7 +20,8 @@ RUN npm install
 # Bundle app source
 #COPY . .
 
-ENV PORT 4200
+# docker run -d -p 3001:4200 --env-file ./.env
+ENV PORT 3005
 
 EXPOSE $PORT
  
